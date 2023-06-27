@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="side2.css">
+  <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+  <div class="top">
+    <div class="top1">
+      <button onclick="hider()"><img src="icons/drop-down-menu.png" alt=""></button>
+    </div>
+    <div class="top2">
+      <button onclick="home()" >Home</button>
+      <button onclick="facebook()" >Facebook Clone</button>
+      <button onclick="astu()">Astu E-Student Clone</button>
+      <button onclick="about()">About Me</button>
+    </div>
+    <div class="top3">
+      <button onclick="login()">Login<img src="icons/login-.png" alt=""></button>
+      <button onclick="signin()">SignIn <img src="icons/profile.png" alt=""></button>
+    </div>
+  </div>
+  <div class="container">
+    <div id="side" class="side">
+      <button onclick="home()"><img src="icons/home-button.png" alt=""><p>Home</p></button>
+      <button onclick="facebook()"><img src="icons/fblg.png" alt=""><p>Facebook Clone</p></button>
+      <button onclick="astu()"><img src="icons/epsilon.png" alt=""><p>Astu E-Student Clone</p></button>
+      <button onclick="about()"><img src="icons/info.png" alt=""><p>About Me</p></button>
+    </div>
+
+  <div id="main" class="main">
+
+    <div id="about" class="about-me">
+      <div class="about">
+        <div class="profile">
+        <img  src="image/tesfaye.JPG" alt="">
+      </div>
+      <div class="description1">
+          <p>
+              <span class="info">Full name: </span>
+              <span class="ans">Tesfaye Zeleke</span>
+          </p>
+          <p>
+              <span class="info">ID Numaber: </span>
+              <span class="ans">Ugr/25639/14</span>
+          </p>
+          <p>
+              <span class="info">Admission Year: </span>
+              <span class="ans">2021/2022</span>
+          </p>
+          <p>
+              <span class="info">Dormitary: </span>
+              <span class="ans">B368 ,R68</span>
+          </p>
+      </div>
+      <div class="description2">
+          <p>
+              <span class="info">Program: </span>
+              <span class="ans">Software Engineering</span>
+          </p>
+          <p>
+              <span class="info">Admission: </span>
+              <span class="ans">Undergraduate</span>
+          </p>
+          <p>
+              <span class="info">Class Year: </span>
+              <span class="ans">Second Year</span>
+          </p>
+          <p>
+              <span class="info">Section: </span>
+              <span class="ans">Section 2</span>
+          </p>
+      </div>
+      </div>
+
+      <div class="adress">
+        <div>
+          <p>Contact Adresses</p>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.facebook.com/watch/SonyPictures/"><img src="icons/facebook (1) copy.png" alt=""></a>
+        <a target="_blank" href="https://t.me/abi1924"><img src="icons/telegram.png" alt=""></a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=SHj2dbfCRB0"><img src="icons/youtube.png" alt=""></a>
+        </div>
+        <div>
+          <p class="p3"><b>Email : </b>abizeleke19@gmail.com</p>
+        </div>
+        <div>
+          <p class="p3"><b>Phone : </b>+2519313390000</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="facebook" class="facebook">
+      <iframe src="https://abizeleke.github.io/trial2/" frameborder="" ></iframe>
+    </div>
+
+    <div id="astu" class="astu">
+      <iframe src="https://abizeleke.github.io/trial1/" frameborder="" ></iframe>
+    </div>
+    <div id="home" class="hom">
+      <div class="wellcome">
+        <div>
+        <h2 data-text="Wellcome ">Wellcome</h2>    
+        </div>
+      </div>
+      <div class="parag">
+        <div class="paragraph">
+          <p>This is personal webpage that contains some clone contents such as facebook clone and astu e-student clone. Additionaly it has login and signin pages.But this page is not connected with data base so it cant save or do database related tasks. If you want to show the above contents you can check sidebar or navigation bar buttons.  </p>
+        </div>
+        <img src="image/drunk.png" alt="">
+      </div>
+
+      <div class="thankyou">
+        <p>ThankYou For Visting Us!</p>
+      </div>
+    </div>
+
+      
+  </div>
+
+  <div id="side2" class="side2">
+
+      <div class="log">
+        <div id="login" class="box">
+          <div class="loginbox">
+              <form action="">
+                  <h2>Login</h2>
+                  
+                  <div class="inputbox">
+                      <input class="inp2" type="email" required placeholder="Email" > 
+                  </div>
+                 
+                  <div class="inputbox">
+                      <input class="inp2" type="password" required placeholder="Password">
+                  </div>
+                <div class="remforg">
+                  <label > <input class="checkbox" type="checkbox"> Remember me</label>
+                  <a href="#">Forgot password</a>
+                  </div>
+                  <span class="regbtn">
+                  <a onclick="close1()"href="""><button>Login</button></a>
+                      
+                  </span>
+                <div class="register">
+                    <p>Don't have an account?</p>
+                    <a onclick="signin()"href="#">Register</a></p>
+                    <div></div>
+                  </form>
+                </div>
+                
+          </div>
+      </div>
+
+    <div id="signin" class="signin1">
+        <div class="log">
+          <div class="box">
+            <div class="loginbox">
+          <div class="sign">
+            <label for="">Full name</label>
+            <input type="text" required>
+            <label for="">Email</label>
+            <input type="email" required>
+            <label for="">Phone number</label>
+            <input type="text" required>
+            <label for="">Birth date</label>
+            <input type="date" required>
+            <label for="">Create Password</label>
+            <input type="password" required>
+            <label for="">Confirm Password</label>
+            <input type="password" required>
+            <label for="">Gender</label>
+            <div>
+              <span>
+                <p>Male</p>
+                <input type="radio" name="gender" required>
+              </span>
+              <span>
+                <p>Female</p>
+                <input type="radio" name="gender" required>
+              </span>
+              <span>
+                <p>Other</p>
+                <input type="radio" name="gender" required>
+              </span>
+            </div>
+            <span class="checkbox">
+              <input type="checkbox"> <p>I am agree with terms and condtions </p>
+            </span>
+            <button onclick="close1()">Submit</button>
+          </div>
+        </div>  
+      </div>
+
+        </div>
+    </div>
+
+      
+    </div>
+    <div class="close">
+      <button onclick="close1()">Close
+      </button>
+    </div>
+  </div>
+
+  <script src="index.js">
+  </script>
+</body>
+</html>

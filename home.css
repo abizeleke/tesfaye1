@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    display: block;
+    box-sizing: border-box;
+    background: url(image/3425225.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center; 
+} 
+.hom{
+    display: flex;
+    flex-direction: column;
+    background: url(image/3425225.jpg);
+    width: 100%;
+    height: 100%;
+}
+.wellcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 10px 10px 0px 10px;
+}
+.wellcome h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    font-size: 90px;
+    color: transparent;
+}
+.wellcome h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #f19b2b;
+    -webkit-text-stroke: 0vw #383d52; 
+    border-right: 6px solid #f19b2b;
+    overflow: hidden;
+    animation: wellcome 4s linear;
+}
+.parag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.parag img{
+    width: 140px;
+}
+.paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 10px white;
+    font-size: 22px;
+    color: white;
+    max-width: 850px;
+}
+.thankyou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 15px 0px 25px 0px;
+    color: rgb(5, 245, 205);
+}
+.about-me{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.about-me .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1900px;
+}
+.about .profile img{
+    width: 200px;
+    margin: 3px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 3px gray;
+   
+}
+.about .description1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.774);
+    margin-left: 20px;
+}
+.about .description2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+.about .description1 p,
+.about .description2 p{
+    margin-bottom: 20px;
+}
+.about .info{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: arial;
+}
+.about .ans{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: arial;
+}
+.about-me .adress{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+.about-me .adress div{
+    display: flex;
+    flex-direction: row;
+}
+.about-me .adress a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.about-me .adress a img{
+    width: 30px;
+}
+.about-me .adress .p3{
+    font-weight: 500;
+}
+.about-me .adress p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e78b4;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.facebook{
+    width: 100%;
+    display: none;
+}
+.facebook iframe{
+    display: flexbox;
+    width: 100%;
+    height: 100vh;   
+}
+.astu{
+    width: 100%;
+    display: none;
+}
+.astu iframe{
+    display: flexbox;
+    width: 100%;
+    height: 100vh;   
+}
+@keyframes wellcome{
+    0%{
+        width: 0;
+    }
+    300%{
+        width: 100%;
+    }
+}
