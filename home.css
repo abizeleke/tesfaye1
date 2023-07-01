@@ -1,34 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-body{
+.container{
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center; 
-} 
+}
+
 .hom{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    background-color: #102680;
+    height: 100vh;
+    background: url(image/3425225.jpg);
 }
+
 .wellcome{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-color: transparent;
-    margin: 10px 10px 0px 10px;
-    background-color: aqua;
+    margin-bottom: 30px;
 }
 .wellcome h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -54,11 +44,10 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #f19b2b;
+    backdrop-filter: blur(16px);
 }
 .parag img{
-    width: 140px;
-    background-color: #1e78b4;
+    width: 100px;
 }
 .paragraph{
     font-family: Arial, Helvetica, sans-serif;
@@ -68,10 +57,11 @@ body{
     border: 2px solid white;
     border-radius: 15px;
     border: none;
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 25px rgb(255, 0, 98);
     font-size: 22px;
-    color: white;
+    color: rgb(255, 255, 255);
     max-width: 850px;
+    margin: 10px;
 }
 .thankyou{
     display: flex;
@@ -80,9 +70,8 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     font-weight: 900;
-    margin: 15px 0px 25px 0px;
     color: rgb(5, 245, 205);
-    background-color: black;
+    margin: 30px 0px 0px 0px;
 }
 .about-me{
     display: none;
@@ -92,6 +81,34 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+}
+.facebook{
+    width: 100%;
+    display: none;
+}
+.facebook iframe{
+    display: flexbox;
+    width: 100%;
+    height: 100vh;   
+}
+
+.astu{
+    width: 100%;
+    display: none;
+}
+.astu iframe{
+    display: flexbox;
+    width: 100%;
+    height: 100vh;   
+}
+.about-me{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 .about-me .about{
     display: flex;
@@ -103,8 +120,7 @@ body{
     width: 200px;
     margin: 3px;
     margin-left: 10px;
-    box-shadow: 0px 0px 3px gray;
-   
+    box-shadow: 0px 0px 3px gray; 
 }
 .about .description1{
     display: flex;
@@ -112,7 +128,6 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.774);
-    margin-left: 20px;
 }
 .about .description2{
     display: flex;
@@ -124,6 +139,7 @@ body{
 .about .description1 p,
 .about .description2 p{
     margin-bottom: 20px;
+    margin: 0px 0px 20px 10px;
 }
 .about .info{
     font-size: 20px;
@@ -162,25 +178,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #1e78b4;
     font-weight: 600;
-    margin-top: 10px;
-}
-.facebook{
-    width: 100%;
-    display: none;
-}
-.facebook iframe{
-    display: flexbox;
-    width: 100%;
-    height: 100vh;   
-}
-.astu{
-    width: 100%;
-    display: none;
-}
-.astu iframe{
-    display: flexbox;
-    width: 100%;
-    height: 100vh;   
+    margin-top: 6px;
 }
 @keyframes wellcome{
     0%{
