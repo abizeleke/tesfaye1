@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
 }
-.container{
+body{
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: url(image/3425225.jpg);
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden;
 }
 .top{
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: row;
     position: sticky;
@@ -84,7 +88,6 @@
     width: 30px;
     margin-left: 10px;
 }
-
 .side{
     display: none;
     flex-direction: column;
@@ -139,7 +142,6 @@
     box-shadow: 0px 0px 10px rgb(236, 143, 20);
     flex: 1;
 }
-
 @media(max-width:700px){
     .side{
         width: 240px;
@@ -168,31 +170,29 @@
     .top .top2{
         display: none;
     }
-    .hom .wellcome{
-        margin: 10px 0px 0px 0px;
-        width: 300px;
-    }
     .hom .wellcome h2{
-        font-size: 40px;
-        
-    }
-    .hom .parag{
-        width: 300px;
+        font-size: 50px;
     }
     .hom .paragraph{
-        font-size: 14px;
-        margin: 5px 5px 5px 5px;
-        padding: 5px;
+        font-size: 19px;
     }
-    .hom .parag img{
-        width: 70px;
-    }
+    
     .hom .thankyou{
-        font-size: 18px;
-        margin: 10px 0px 0px 0px;
-        width: 300px;
+        font-size: 20px;
+        margin: 40px 0px 0px 0px;
+        width: 100%;
     }
-    .about-me{
+    .about-me .about{
         flex-direction: column;
+    }
+    
+}
+
+@keyframes wellcome{
+    0%{
+        width: 0;
+    }
+    300%{
+        width: 100%;
     }
 }
