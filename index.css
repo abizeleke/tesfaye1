@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
-.top{
+.container{
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.top{
+    display: none;
     align-items: center;
     flex-direction: row;
     position: sticky;
@@ -79,11 +84,7 @@
     width: 30px;
     margin-left: 10px;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+
 .side{
     display: none;
     flex-direction: column;
@@ -136,9 +137,7 @@
     height: 100vh;
     background-color: rgb(162, 156, 165);
     box-shadow: 0px 0px 10px rgb(236, 143, 20);
-    flex: 4;
-    margin: 3px 20px 0px 20px;
-
+    flex: 1;
 }
 
 @media(max-width:700px){
@@ -155,6 +154,8 @@
         display: flex;
     }
     .main{
+        display: flex;
+        padding: 0px;
         margin-left: 0px;
         flex: 0;
         position: absolute;
@@ -166,5 +167,32 @@
     }
     .top .top2{
         display: none;
+    }
+    .hom .wellcome{
+        margin: 10px 0px 0px 0px;
+        width: 300px;
+    }
+    .hom .wellcome h2{
+        font-size: 40px;
+        
+    }
+    .hom .parag{
+        width: 300px;
+    }
+    .hom .paragraph{
+        font-size: 14px;
+        margin: 5px 5px 5px 5px;
+        padding: 5px;
+    }
+    .hom .parag img{
+        width: 70px;
+    }
+    .hom .thankyou{
+        font-size: 18px;
+        margin: 10px 0px 0px 0px;
+        width: 300px;
+    }
+    .about-me{
+        flex-direction: column;
     }
 }
